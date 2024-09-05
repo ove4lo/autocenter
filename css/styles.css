@@ -132,6 +132,11 @@ body {
     width: 100%;
 }
 
+
+.header a {
+    color: #191919;
+}
+
 .header__top {
     height: 94px;
     padding: 16px, 0, 8px, 0;
@@ -140,16 +145,42 @@ body {
 
 .header__row {
     display: flex;
+    justify-content: center; 
+    padding: 0 20px;
 }
 
 .header__content {
-    max-width: 592px;
-    position: relative;
+    min-width: 100%;
     z-index: 1;
+    border-radius: 40px;
+    background-color: #191919;
+    min-height: 663px;
 }
 
-.header a {
-    color: #191919;
+
+.header__triangle {
+    margin-left: auto; 
+    height: auto;
+    z-index: 2;
+}
+
+/*HEADER CONTENT*/
+.header__title {
+    margin-bottom: 30px;
+    font-size: 52px;
+    z-index: 3;
+    font-weight: 900;
+    color: #F3F3F3;
+    width: 603px;
+
+}
+
+.header__text {
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    z-index: 3;
+    color: #F3F3F3;
 }
 
 /*NAV*/
@@ -281,20 +312,6 @@ body {
 .btn:active {
     position: relative;
     top: 1px;
-}
-
-
-/*HEADER CONTENT*/
-.header__title {
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-
-.header__text {
-    margin-bottom: 50px;
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--secondary);
 }
 
 /*AESTHETICS*/
