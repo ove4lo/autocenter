@@ -90,7 +90,7 @@ legend {
 
 /*основные переменные*/
 :root {
-    --container-width: 1920px;
+    --container-width: 1680px;
     --container-padding: 120px;
     --secondary: rgba(15, 31, 28, 0.5);
 }
@@ -289,30 +289,113 @@ body {
 }
 
 /*BUTTON*/
-.btn {
-
-    display: inline-block; /*не работают блочные стили*/
-
-    font-size: 15px;
+.btn__dark__red {
+    font-size: 18px;
     color: #fff;
-    font-weight: 500;
-    background: -webkit-linear-gradient(135deg, rgb(144, 151, 150), rgb(0, 28, 7));
-    background: -moz-linear-gradient(135deg, rgb(144, 151, 150), rgb(0, 28, 7));
-    background: linear-gradient(135deg, rgb(144, 151, 150), rgb(0, 28, 7));
-    padding: 13px 44px;
-    border-radius: 100px;
+    font-weight: 700;
+    background: #D90008;
+    border-radius: 16px;
+    padding: 24px 32px; 
+    width: 300px;
+    height: 70px;
 }
 
-.btn:hover {
-    background: -webkit-linear-gradient(135deg, rgb(0, 28, 7), rgb(144, 151, 150));
-    background: -moz-linear-gradient(135deg, rgb(0, 28, 7), rgb(144, 151, 150));
-    background: linear-gradient(135deg, rgb(0, 28, 7), rgb(144, 151, 150));
+.japan__items {
+    margin-bottom: 16px;
+    width: 100%;
 }
 
-.btn:active {
-    position: relative;
-    top: 1px;
+.japan__title {
+    font-size: 32px;
+    font-weight: 900;
 }
+
+.japan__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
+}
+
+.japan__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+    overflow: hidden; /* Предотвращает переполнение текста */
+    text-overflow: ellipsis; /* Добавляет многоточие, если текст не помещается */
+    white-space: nowrap; /* Оставляем текст в одной строке */
+    flex-shrink: 1; /* Позволяем тексту сжиматься, чтобы освободить место для кнопки */
+}
+
+.view__all {
+    font-size: 18px; 
+    text-decoration: none;
+    font-weight: 400;
+    white-space: nowrap;
+    color: #191919;
+    margin-left: 16px; /* Добавляем отступ слева для кнопки */
+}
+
+
+.car__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 элемента в ряду */
+    gap: 16px; 
+    width: 1680px;
+}
+
+.car__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    width: 411px;
+    height: 477px;
+}
+
+.car__item img {
+    width: 371px;
+    height: 300px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+}
+
+.car__item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 8px 0;
+}
+
+.car__item span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.btn__gray {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d1d1d1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn__gray:hover {
+    background-color: #c1c1c1;
+}
+
+
+
 
 /*AESTHETICS*/
 .aesthetics {
