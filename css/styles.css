@@ -108,11 +108,11 @@ body {
 }
 
 /*основной контейнер*/
-.container {
+/* .container {
     max-width: var(--container-width);
-    margin: 0 auto; /*по центру*/
-    padding: 0 var(--container-padding); /*отступы*/
-}
+    margin: 0 auto; 
+    padding: 0 var(--container-padding); 
+} */
 
 /*подключение шрифтов*/  
 @font-face {
@@ -127,7 +127,7 @@ body {
     overflow: hidden;
     position: relative;
     min-height: 700px;
-    padding-top: 45px;
+    padding-top: 20px;
     color: #191919;
     width: 100%;
 }
@@ -139,48 +139,73 @@ body {
 
 .header__top {
     height: 94px;
-    padding: 16px, 0, 8px, 0;
     column-gap: 286px;
 }
 
 .header__row {
     display: flex;
-    justify-content: center; 
-    padding: 0 20px;
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 0 6%;
+    width: 100%;
+    position: relative; 
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between; /* Разместить элементы по краям */
+    align-items: center;
+    position: relative;
+    background-color: #191919;
+    border-radius: 40px;
+    width: 100%;
 }
 
 .header__content {
-    min-width: 100%;
+    display: flex;
+    flex-direction: column; /* Разместить элементы вертикально */
+    justify-content: center; /* Центрировать по вертикали */
+    padding-left: 80px;  
+    padding-top: 80px;
+    padding-bottom: 80px;
     z-index: 1;
-    border-radius: 40px;
-    background-color: #191919;
-    min-height: 663px;
+    width: 42%; 
+    transform: scaleY(0.95); /* Уменьшает высоту текста на 20% */
+    display: inline-block; /* Обязательно для работы transform */
 }
 
+.header__image {
+    position: absolute; 
+    bottom: 230px; /* Поднимаем элемент выше, увеличив значение bottom */
+    right: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 1;
+}
 
-.header__triangle {
-    margin-left: auto; 
-    height: auto;
-    z-index: 2;
+.header__image img {
+    /* height: auto; */
+    width: 55%; 
+    float: right;
 }
 
 /*HEADER CONTENT*/
 .header__title {
     margin-bottom: 30px;
-    font-size: 52px;
+    font-size: 45px;
     z-index: 3;
     font-weight: 900;
     color: #F3F3F3;
-    width: 603px;
-
+    /* line-height: 62px; */
 }
 
 .header__text {
     margin-bottom: 50px;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 20px;
     z-index: 3;
     color: #F3F3F3;
+    opacity: 50%;
+    line-height: 30px;
 }
 
 /*NAV*/
@@ -188,6 +213,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 6%;
 }
 
 .nav__list {
@@ -290,15 +316,20 @@ body {
 
 /*BUTTON*/
 .btn__dark__red {
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
     font-weight: 700;
     background: #D90008;
     border-radius: 16px;
     padding: 24px 32px; 
-    width: 300px;
-    height: 70px;
+    width: 230px;
+    height: 60px;
+    display: flex;          /* Используем flexbox для центрирования */
+    align-items: center;    /* Центрирование по вертикали */
+    justify-content: center;/* Центрирование по горизонтали */
+    text-align: center;     /* Убедиться, что текст выровнен по центру */
 }
+
 
 .japan__items {
     margin-bottom: 16px;
