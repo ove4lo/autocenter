@@ -74,76 +74,157 @@
 
                     <div class="header__image">
                         <img src="./images/triangle.svg" alt="triangle">
-                    </div>
+                    </div> 
+                    <div class="header__cars">
+                        <img src="./images/header_auto/l9.png" class="car car-1">
+                        <img src="./images/header_auto/kia.png" class="car car-2">
+                        <img src="./images/header_auto/honda.png" class="car car-3">
+                    </div>                   
                 </div>
             </div>
 
         </div>
     </header>
 
-    <!-- <main>
-        <section class="cars__from__japan">
-            <div class="container">
-                <div class="japan__items">
-                    <h2 class="japan__title">Автомобили из Японии</h2>
-                    <div class="japan__header">
-                        <p class="japan__subtitle">Toyota, Honda, Nissan и другие японские автомобили.</p>
-                        <a href="#" class="view__all">Смотреть все →</a>
+    <main>
+        <section class="contact__row">
+            <div class="contact__main">
+                <div class="contact__block">
+                    <div class="contact__content">
+                        <div class="contact__title">Контактная информация</div>
+                        <div class="contact__info">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</div>
+                    </div>
+                    <div class="contact__frame">
+                        <div class="contact_connect">
+                            <div class="contact_connect_title">Позвонить</div>
+                            <div class="contact_connect_value">+7 123 456 78 90</div>
+                            <div class="contact_connect_title">Написать</div>
+                            <div class="contact_connect_value">info@example.com</div>
+                            <div class="contact_connect_title">Адрес</div>
+                            <div class="contact_connect_value">123, Main Street, Tokyo, Japan</div>
+                        </div>
+                        <div class="contact_map">
+                            <div class="map_container">
+                                <img src="./images/maps_icons/2gis.png">
+                                <a class="contact_connect_contact_map_title" href="#">Мы на 2ГИС</a>
+                            </div>
+                            <div class="map_container">
+                                <img src="./images/maps_icons/yandex.png">
+                                <a class="contact_connect_contact_map_title" href="#">Мы на Яндекс Картах</a>
+                            </div>
+                            <div class="map_container">
+                                <img src="./images/maps_icons/vl.png">
+                                <a class="contact_connect_contact_map_title" href="#">VL-справочник</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="car__list">
-                    <div class="car__item">
-                        <img src="images/auto/subaru.png" alt="Subaru">
-                        <p>Subaru LEVORG VN5</p>
-                        <span>2 115 600 ₽</span>
-                        <a href="#" class="btn-gray">Оставить заявку</a>
-                    </div>
-                    <div class="car__item">
-                        <img src="images/auto/mazda.png" alt="Mazda">
-                        <p>Mazda Mazda6 2.5 AT Touring</p>
-                        <span>2 802 400 ₽</span>
-                        <a href="#" class="btn-gray">Оставить заявку</a>
-                    </div>
-                    <div class="car__item">
-                        <img src="images/auto/mazda.png" alt="Mazda">
-                        <p>Mazda Mazda6 2.5 AT Touring</p>
-                        <span>2 802 400 ₽</span>
-                        <a href="#" class="btn-gray">Оставить заявку</a>
-                    </div>
-                    <div class="car__item">
-                        <img src="images/auto/mazda.png" alt="Mazda">
-                        <p>Mazda Mazda6 2.5 AT Touring</p>
-                        <span>2 802 400 ₽</span>
-                        <a href="#" class="btn-gray">Оставить заявку</a>
-                    </div>
-                    <div class="car__item">
-                        <img src="images/auto/mazda.png" alt="Mazda">
-                        <p>Mazda Mazda6 2.5 AT Touring</p>
-                        <span>2 802 400 ₽</span>
-                        <a href="#" class="btn__gray">Оставить заявку</a>
-                    </div>
+                <div class="contact__request">
+                    <h2 class="form-title">Оставить заявку</h2>
+                    <form class="request__form">
+                        <div class="name__phone">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" placeholder="Введите имя">
+                            </div>
+                            <div class="form-group">
+                                <div class="phone__title">
+                                    <label for="phone">Телефон </label>
+                                    <div class="necessary">(Обязательно)</div>
+                                </div>
+                                <input type="text" id="phone" placeholder="+7">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Уточните свой вопрос</label>
+                            <textarea id="message" placeholder="Введите текст сообщения"></textarea>
+                        </div>
+                        <div class="request__send">
+                            <div class="form-group full-width checkbox-group">
+                                <input type="checkbox" id="policy" class="custom-checkbox">
+                                <label for="policy">С <a href="#">правилами политики конфиденциальности</a> ознакомлен</label>
+                            </div>
+                            <div class="form-group full-width submit-group">
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div> 
+                    </form>
                 </div>
-                <a href="#" class="btn__dark__red">Смотреть все</a>
             </div>
         </section>
+    </main>
 
-    </main> -->
+
 
     <footer id="footer" class="footer">
-        <div class="container">
-            <nav class="nav nav--footer">
-                <div>
-                    <h2 class="logo"><a href="#main"></a></h2>
+        <div class="container__footer">
+            <div class="link__row">
+                <img src="./images/logo_white.svg">
+                <div class="list">
+                    <div class="page__link">О нас</div>
+                    <div class="page__link">Каталог авто</div>
                 </div>
-
-                <ul class="nav__list nav__list--footer">
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#comment">Отзывы</a></li>
-                    <li><a href="#subscribe">Контакты</a></li>
-                </ul>
-            </nav>
+                <div class="car-group from__japan">
+                    <div class="title">Авто из Японии</div>
+                    <div class="cars">
+                        <div class="car">Toyota</div>
+                        <div class="car">Nissan</div>
+                        <div class="car">Honda</div>
+                        <div class="car">Mazda</div>
+                        <div class="car">Mitsubishi</div>
+                        <div class="car">Subaru</div>
+                        <div class="car">Suzuki</div>
+                        <div class="car">Lexus</div>
+                        <div class="car">BMW</div>
+                        <div class="car">Daihatsu</div>
+                    </div>
+                </div>
+                <div class="car-group from__china">
+                    <div class="title">Авто из Китая</div>
+                    <div class="cars">
+                        <div class="car">Changan</div>
+                        <div class="car">Exeed</div>
+                        <div class="car">Geely</div>
+                        <div class="car">Chery</div>
+                        <div class="car">Haval</div>
+                        <div class="car">FAW</div>
+                        <div class="car">BYD</div>
+                        <div class="car">JAC</div>
+                        <div class="car">Lifan</div>
+                        <div class="car">DongFeng</div>
+                    </div>
+                </div>
+                <div class="car-group from__korea">
+                    <div class="title">Авто из Кореи</div>
+                    <div class="cars">
+                        <div class="car">Hyundai</div>
+                        <div class="car">Kia</div>
+                        <div class="car">SsangYong</div>
+                        <div class="car">Daewoo</div>
+                        <div class="car">Samsung</div>
+                    </div>
+                </div>
+            </div>
+            <div class="confidentional">
+                <div class="rights">
+                    <div class="title">Политика конфиденциальности</div>
+                    <div class="info">© 2003-2024 ООО "Автоцентр"</div>
+                </div>
+                <div class="social">
+                    <div class="icons">
+                        <img src="./images/socialmedia/whatsapp.svg">
+                        <img src="./images/socialmedia/telegram.svg">
+                        <img src="./images/socialmedia/youtube.svg">
+                    </div>
+                    <div class="about_number">
+                        <div class="number">+7 123 456 78 90</div>
+                        <div class="info">Звонок по РФ бесплатный</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
 
     <script src="libs/jquery-3.7.1.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
