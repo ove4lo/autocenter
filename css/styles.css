@@ -350,6 +350,11 @@ body {
 }
 
 /*BUTTON*/
+.center_button {
+    display: flex;
+    justify-content: center;
+}
+
 .btn__dark__red {
     font-size: 14px;
     color: #fff;
@@ -359,10 +364,31 @@ body {
     padding: 24px 32px; 
     width: 230px;
     height: 60px;
-    display: flex;          /* Используем flexbox для центрирования */
-    align-items: center;    /* Центрирование по вертикали */
-    justify-content: center;/* Центрирование по горизонтали */
-    text-align: center;     /* Убедиться, что текст выровнен по центру */
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+    text-align: center;     
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__dark__red:hover {
+    background-color: #b30006;
+    transform: scale(1.05); /* Slightly enlarges the button */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+
+.cars__from__japan {
+    margin-bottom: 40px;
+}
+
+.container__japan {
+    display: flex;
+    justify-content: space-between;  
+    padding: 0 6%;
+    width: 100%;
+    position: relative; 
+    flex-direction: column;
 }
 
 
@@ -381,6 +407,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
+    margin-bottom: 30px;
     width: 100%;
     flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
 }
@@ -397,12 +424,17 @@ body {
 }
 
 .view__all {
-    font-size: 18px; 
+    font-size: 16px; 
     text-decoration: none;
     font-weight: 400;
     white-space: nowrap;
     color: #191919;
-    margin-left: 16px; /* Добавляем отступ слева для кнопки */
+    margin-left: 16px; 
+    transition: color 0.3s ease;
+}
+
+.view__all:hover {
+    color: #EB1C24;
 }
 
 
@@ -410,7 +442,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .car__item {
@@ -419,6 +451,7 @@ body {
     padding: 8px;
     background-color: #F8F8F8;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .car__item img {
@@ -432,10 +465,13 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin: 8px 0;
+    white-space: nowrap;     
+    overflow: hidden;           
+    text-overflow: ellipsis;
 }
 
 .car__item p {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     margin-bottom: 12px;
 }
@@ -449,6 +485,7 @@ body {
     font-size: 13px;
     font-weight: 700;
     line-height: 1;
+    transition: background-color 0.3s;
 }
 
 .btn__gray:hover {
@@ -463,6 +500,7 @@ body {
     border-radius: 12px;
     font-size: 13px;
     font-weight: 700;
+    transition: background-color 0.3s ease-in;
 }
 
 .btn__light__gray:hover {
@@ -483,6 +521,26 @@ body {
     line-height: 1;
 }
 
+.container__china__korea {
+    display: flex;
+    justify-content: space-between;  
+    padding: 0 6%;
+    width: 100%;
+    position: relative; 
+    flex-direction: column;
+}
+
+.car__items .car__title {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.car__subtitle {
+    font-size: 13px;
+    margin-bottom: 26px;
+}
+
+
 
 .cars__about {
     display: flex;
@@ -499,7 +557,7 @@ body {
     padding: 8px;
     color: #fff;
     border-radius: 16px;
-
+    background-size: 100% 100%;
 }
 
 .cars__asia {
@@ -514,17 +572,41 @@ body {
 }
 
 .cars__asia p {
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 40px;
+    width: 80%;
+}
+
+.container__about__us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 0 6%;
+    width: 100%;
+    position: relative; 
+    flex-direction: column;
 }
 
 .about__us {
     background-size: cover;
-    padding: 20px;
+    padding-left: 30px;
     display: flex;
     align-items: center;
     position: relative;
     border-radius: 12px;
+    /* justify-content: space-between; */
+}
+
+.about__us p{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    width: 15%;
+    margin-left: 19%;
 }
 
 .content {
@@ -538,16 +620,12 @@ body {
     font-weight: 700;
 }
 
-.logo {
-    margin-left: auto;
-}
-
 .advantages {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 88%;
     margin-top: -20px;
-    padding: 20px;
+    padding-top: 20px;
     background-color: #fff;
     border-radius: 12px;
     position: relative;
@@ -556,14 +634,26 @@ body {
     text-align: center;
     box-shadow: 0px 4px 24px 0px #0000001F;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
 
 .advantages__item {
-    text-align: center;
+    display: flex;
+    flex-direction: column; 
     align-items: center;
     width: calc(14.3% - 3px);
     margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.advantages__item img {
+    width: 20%;
+}
+
+.advantages__item p {
+    font-size: 11px;
+    text-align: center;
+    width: 90%;
 }
 
 .reviews__slider {
