@@ -883,10 +883,9 @@ body {
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
-    flex: 0 0 35%; /* Take up 35% of the available space */
+    flex: 0 0 35%; 
 }
 
-/* Hide the default checkbox */
 .custom-checkbox {
     appearance: none;
     -webkit-appearance: none;
@@ -900,10 +899,9 @@ body {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    box-sizing: border-box; /* Ensures the border is included in the width and height */
+    box-sizing: border-box; 
 }
 
-/* Add a custom checkmark */
 .custom-checkbox::before {
     content: '';
     position: absolute;
@@ -918,12 +916,12 @@ body {
     transition: opacity 0.2s ease-in-out;
 }
 
-/* Show checkmark when checked */
+
 .custom-checkbox:checked::before {
     opacity: 1;
 }
 
-/* Change the background color when checked */
+
 .custom-checkbox:checked {
     background-color: #28a745;
     border-color: #28a745;
@@ -940,22 +938,22 @@ body {
     cursor: pointer;
     height: 70px;
     transition: background-color 0.3s, transform 0.2s;
-    width: 100%; /* Makes the button take the full width of the .submit-group */
+    width: 100%; 
     text-align: center;
 }
 
 .submit-group button:hover {
-    background-color: #e0e0e0; /* Slightly darker background color on hover */
-    color: #333; /* Darker text color on hover for better contrast */
-    transform: scale(1.02); /* Slightly increase the size on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    background-color: #e0e0e0; 
+    color: #333; 
+    transform: scale(1.02); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .submit-group button:active {
-    background-color: #d0d0d0; /* Even darker background color when clicked */
-    color: #333; /* Keep the text color consistent with hover */
-    transform: scale(0.98); /* Slightly reduce size on click */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Restore shadow */
+    background-color: #d0d0d0; 
+    color: #333; 
+    transform: scale(0.98); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -1049,11 +1047,12 @@ body {
 .confidentional {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border-top: #3B3B3B 1px solid;
     margin-bottom: 20px;
 }
 
-.confidentional .rights {
+.rights {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -1061,20 +1060,22 @@ body {
     gap: 10px;
 }
 
-.confidentional .rights .title {
+.rights h4 {
     color: #f3f3f3;
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.confidentional .rights .info {
-    color: #757575;
-    font-size: 11px;
+.rights p {
+    color:  #757575;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.confidentional .social {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
+.number__footer {
+    color: #F3F3F3;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
