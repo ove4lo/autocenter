@@ -92,12 +92,12 @@ legend {
 	display: block;
 }
 
-/*основные переменные*/
+/* основные переменные
 :root {
     --container-width: 1680px;
     --container-padding: 120px;
     --secondary: rgba(15, 31, 28, 0.5);
-}
+} */
   
 /*основа*/
 body {
@@ -111,6 +111,12 @@ body {
 .none {
     display: none !important;
 }
+
+/* .container {
+        max-width: var(--container-width);
+        margin: 0 auto; 
+        padding: 0 var(--container-padding); 
+} */
 
 /*подключение шрифтов*/  
 @font-face {
@@ -643,10 +649,13 @@ body {
     padding-left: 5px;
 }
 
-/*FOOTER*/
-.footer {
-    background-color: rgb(0, 43, 35);
-    padding: 56px 0 74px;
+.contact__row {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 0 6%;
+    width: 100%;
+    position: relative; 
 }
 
 .contact__block {
