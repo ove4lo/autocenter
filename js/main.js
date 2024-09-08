@@ -6,7 +6,7 @@ owl.owlCarousel({
     loop: true,
     margin: 30,
     startPosition: 1,
-    items: 3,
+    items: 4,
 });
 $('.slider__btn--prev').click(function () {
     owl.trigger('prev.owl.carousel');
