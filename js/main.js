@@ -4,6 +4,7 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
     loop: true,
     startPosition: 1,
+    margin: 10,
     items: 4,
 });
 $('.slider__btn--prev').click(function () {
