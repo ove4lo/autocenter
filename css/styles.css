@@ -987,7 +987,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    flex: 0 0 65%;
+    flex: 0 0 60%;
 }
 
 .checkbox-group a:hover{
@@ -998,7 +998,7 @@ body {
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
-    flex: 0 0 35%; 
+    flex: 0 0 40%; 
 }
 
 .custom-checkbox {
