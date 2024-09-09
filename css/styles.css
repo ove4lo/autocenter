@@ -92,12 +92,12 @@ legend {
 	display: block;
 }
 
-/* основные переменные */
+/* основные переменные
 :root {
     --container-width: 1680px;
     --container-padding: 120px;
     --secondary: rgba(15, 31, 28, 0.5);
-} 
+} */
   
 /*основа*/
 body {
@@ -112,11 +112,11 @@ body {
     display: none !important;
 }
 
-.container {
+/* .container {
         max-width: var(--container-width);
         margin: 0 auto; 
         padding: 0 var(--container-padding); 
-} 
+} */
 
 /*подключение шрифтов*/  
 @font-face {
@@ -127,15 +127,15 @@ body {
 }
 
 @font-face {
-    font-family: inter-black;
-    src: url('../fonts/Inter-Black.otf') format('truetype');
+    font-family: inter-bold;
+    src: url('../fonts/Inter-Bold.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: inter-bold;
-    src: url('../fonts/Inter-Bold.otf') format('truetype');
+    font-family: inter-black;
+    src: url('../fonts/Inter-Black.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -155,6 +155,11 @@ body {
     color: #191919;
 }
 
+.header__top {
+    height: 94px;
+    column-gap: 286px;
+}
+
 .header__row {
     display: flex;
     align-items: center; 
@@ -163,7 +168,6 @@ body {
     padding: 0 6%;
     width: 100%;
     position: relative; 
-    margin-top: 40px;
 }
 
 .header__main {
@@ -239,11 +243,11 @@ body {
 /*HEADER CONTENT*/
 .header__title {
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 45px;
     z-index: 3;
     font-weight: 900;
     color: #F3F3F3;
-    font-family: inter-black;
+    /* line-height: 62px; */
 }
 
 .header__text {
@@ -252,40 +256,40 @@ body {
     z-index: 3;
     color: #F3F3F3;
     opacity: 50%;
+    line-height: 30px;
 }
-
 
 /*NAV*/
-.header__top {
-    height: 94px;
-    column-gap: 286px;
-    padding: 0 16px; /* Уменьшаем отступы для маленьких экранов */
-}
-
 .nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 6% 8px 6%;
-    gap: 50px; /* Уменьшаем отступы для мобильных устройств */
+    padding: 0 6%;
 }
 
 .nav__list {
     display: flex;
     column-gap: 40px;
-    font-size: 14px;
-    flex-wrap: wrap; /* Позволяем элементам переноситься на следующую строку при уменьшении экрана */
-    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 528px;
+}
+
+.nav__list a {
+    position: relative;
+    text-decoration: none; 
+}
+
+.nav__list a:hover {
+    color: #EB1C24;
 }
 
 .nav__item--dropdown {
     position: relative;
-    z-index: 50;
 }
 
 .nav__item--dropdown .arrow {
-    display: none;
+    display: none; 
     margin-left: 5px;
     transition: transform 0.3s ease;
     vertical-align: middle;
@@ -298,7 +302,7 @@ body {
 .nav__submenu {
     display: none;
     list-style: none;
-    padding: 16px 24px;
+    padding: 16px 24px 16px 24px;
     position: absolute;
     border-radius: 12px;
     box-shadow: 0px 4px 24px 0px #0000001F;
@@ -327,29 +331,40 @@ body {
     display: flex;
     align-items: center;
     column-gap: 16px;
-    min-width: 100px;
+    min-width: 284px;
+}
+
+.nav__connection img {
+    transition: filter 0.3s ease;
+}
+
+.nav__connection a:hover img {
+    filter: brightness(75%);
+}
+
+
+.nav__toggle {
+    display: none;
 }
 
 .phone-info {
+    row-gap: 4px;
+    margin-left: 33px;
     display: flex;
+    min-width: 180px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 16px;
-    row-gap: 4px;
-}
-
-.nav__toggle {
-    display: none; /* Для мобильных меню, покажем позже */
 }
 
 .phone-number {
-    font-family: inter-bold;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 18px;
     color: #191919;
 }
 
 .phone-desc {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 400;
     color: #757575;
 }
 
@@ -383,12 +398,13 @@ body {
 
 
 .cars__from__japan {
-    padding: 6%;
+    margin-bottom: 40px;
 }
 
 .container__japan {
     display: flex;
     justify-content: space-between;  
+    padding: 0 6%;
     width: 100%;
     position: relative; 
     flex-direction: column;
@@ -396,11 +412,11 @@ body {
 
 
 .japan__items {
+    margin-bottom: 16px;
     width: 100%;
 }
 
 .car__title {
-    font-family: inter-black;
     font-size: 32px;
     font-weight: 900;
 }
@@ -415,6 +431,7 @@ body {
 
 .car__subtitle {
     font-size: 18px;
+    font-weight: 400;
     color: #757575;
 }
 
@@ -456,8 +473,8 @@ body {
 }
 
 .car__item h2 {
-    font-family: inter-bold;
     font-size: 20px;
+    font-weight: 700;
     margin: 8px 0;
     white-space: nowrap;     
     overflow: hidden;           
@@ -465,13 +482,9 @@ body {
 }
 
 .car__item p {
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 400;
     margin-bottom: 12px;
-}
-
-.car__item span {
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .btn__gray {
@@ -626,13 +639,8 @@ body {
 }
 
 .content h2 {
-    font-famile: inter-black;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
-}
-
-.content p {
-    font-size: 18px;
 }
 
 .advantages {
@@ -778,7 +786,7 @@ body {
 .slider__btn {
     position: absolute;
     z-index: 9;
-    margin-top: -15%;
+    margin-top: -12%;
     width: 30px;
     height: 30px;
     border-radius: 30%;
@@ -1269,41 +1277,3 @@ body {
     color: white;
     
 }
-
-
-/* @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav__list {
-        flex-direction: column;
-        column-gap: 0;
-        row-gap: 16px;
-    }
-
-    .nav__connection {
-        margin-top: 16px;
-    }
-
-    .nav__toggle {
-        display: block; 
-    }
-}
-
-@media (max-width: 480px) {
-    .header__top {
-        height: auto;
-        padding: 8px 16px;
-    }
-
-    .nav__list {
-        font-size: 12px; 
-        width: 100%;
-    }
-
-    .phone-info {
-        align-items: center;
-    }
-} */

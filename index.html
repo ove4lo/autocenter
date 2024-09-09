@@ -16,70 +16,71 @@
 <body>
 
     <header id="main" class="header">
+        <div class="container">
 
-
-        <div class="header__top">
-            <nav class="nav">
-                <div class="company__logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </div>
-
-                <ul class="nav__list">
-                    <li><a href="#autofromjapan">Авто из Японии</a></li>
-                    <li><a href="#autofromchina">Авто из Китая</a></li>
-                    <li><a href="#autofromkorea">Авто из Кореи</a></li>
-                    <li class="nav__item--dropdown">
-                        <a href="#aboutus">О нас <img src="./images/arrow_down.svg" class="arrow" alt="arrow"></a>
-                        <ul class="nav__submenu">
-                            <li><a href="#company">Компания</a></li>
-                            <li><a href="#reviews">Отзывы</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav__connection">
-                    <li><a href="#whatsapp"><img src="./images/socialmedia/whatsapp.svg" alt="whatsapp"></a></li>
-                    <li><a href="#telegram"><img src="./images/socialmedia/telegram.svg" alt="telegram"></a></li>
-                    <li class="phone-info">
-                        <span class="phone-number">+7 123 456 78 90</span>
-                        <span class="phone-desc">Звонок по РФ бесплатный</span>
-                    </li>
-                </ul>
-
-                <button type="button" class="nav__toggle">
-                    <div class="menu-icon-wrapper">
-                        <div class="menu-icon"></div>
-                    </div>
-                </button>
-            </nav>
-        </div>
-
-        <div class="header__row">
-            <div class="header__main">
-                <div class="header__content">
-
-                    <h1 class="header__title">
-                        Авто из Японии, Кореи и Китая с выгодой до 30% ниже рынка РФ
-                    </h1>
-
-                    <div class="header__text">
-                        <p>Высокий сервис для клиентов, от заключения договора до выдачи/отправки авто.</p>
+            <div class="header__top">
+                <nav class="nav">
+                    <div class="company_logo">
+                        <img src="./images/logo.svg" alt="logo">
                     </div>
 
-                    <button href="#" class="btn__dark__red">
-                        Рассчитать стоимость
+                    <ul class="nav__list">
+                        <li><a href="#autofromjapan">Авто из Японии</a></li>
+                        <li><a href="#autofromchina">Авто из Китая</a></li>
+                        <li><a href="#autofromkorea">Авто из Кореи</a></li>
+                        <li class="nav__item--dropdown">
+                            <a href="#aboutus">О нас <img src="./images/arrow_down.svg" class="arrow" alt="arrow"></a>
+                            <ul class="nav__submenu">
+                                <li><a href="#company">Компания</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav__connection">
+                        <li><a href="#whatsapp"><img src="./images/socialmedia/whatsapp.svg" alt="whatsapp"></a></li>
+                        <li><a href="#telegram"><img src="./images/socialmedia/telegram.svg" alt="telegram"></a></li>
+                        <li class="phone-info">
+                            <span class="phone-number">+7 123 456 78 90</span>
+                            <span class="phone-desc">Звонок по РФ бесплатный</span>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="nav__toggle">
+                        <div class="menu-icon-wrapper">
+                            <div class="menu-icon"></div>
+                        </div>
                     </button>
-                </div>
-
-                <div class="header__image">
-                    <img src="./images/triangle.svg" alt="triangle">
-                </div>
+                </nav>
             </div>
-            <div class="header__cars">
-                <img src="./images/header_auto/l9.png" class="car car-1">
-                <img src="./images/header_auto/kia.png" class="car car-2">
-                <img src="./images/header_auto/honda.png" class="car car-3">
+
+            <div class="header__row">
+                <div class="header__main">
+                    <div class="header__content">
+
+                        <h1 class="header__title">
+                            Авто из Японии, Кореи и Китая с выгодой до 30% ниже рынка РФ
+                        </h1>
+
+                        <div class="header__text">
+                            <p>Высокий сервис для клиентов, от заключения договора до выдачи/отправки авто.</p>
+                        </div>
+
+                        <button href="#" class="btn__dark__red">
+                            Рассчитать стоимость
+                        </button>
+                    </div>
+
+                    <div class="header__image">
+                        <img src="./images/triangle.svg" alt="triangle">
+                    </div>
+                </div>
+                <div class="header__cars">
+                    <img src="./images/header_auto/l9.png" class="car car-1">
+                    <img src="./images/header_auto/kia.png" class="car car-2">
+                    <img src="./images/header_auto/honda.png" class="car car-3">
+                </div>
             </div>
         </div>
 
@@ -549,8 +550,7 @@
                                     <label for="phone">Телефон </label>
                                     <div class="necessary">(Обязательно)</div>
                                 </div>
-                                <input type="text" id="phone" placeholder="+7 XXX XXX XX XX"
-                                    pattern="^\+7 \d{3} \d{3} \d{2} \d{2}$" required>
+                                <input type="text" id="phone" placeholder="+7 XXX XXX XX XX" pattern="^\+7 \d{3} \d{3} \d{2} \d{2}$" required>
                             </div>
                         </div>
                         <div class="form-group full-width">
