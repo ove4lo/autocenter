@@ -41,13 +41,13 @@ $(document).ready(function() {
  });
 
  document.querySelector('.request__form').addEventListener('submit', function (e) {
-   e.preventDefault(); // Предотвращаем отправку формы по умолчанию
+   e.preventDefault(); //отправка формы отолько при нажатии на кнопку
 
    const nameField = document.getElementById('name');
    const phoneField = document.getElementById('phone');
    let valid = true;
 
-   // Валидация поля "Имя"
+   //валидация имени
    if (nameField.value.trim() === '') {
        setError(nameField, 'Это поле обязательно для заполнения');
        valid = false;
@@ -55,7 +55,7 @@ $(document).ready(function() {
        clearError(nameField);
    }
 
-   // Валидация поля "Телефон"
+   //валидация телефона
    const phoneRegex = /^\+7 \d{3} \d{3} \d{2} \d{2}$/;
    if (!phoneRegex.test(phoneField.value)) {
        setError(phoneField, 'Номер введен некорректно');
@@ -69,7 +69,7 @@ $(document).ready(function() {
    }
 });
 
-// Функция добавления ошибки
+//функция добавления ошибки
 function setError(element, message) {
    element.style.border = '1px solid red';
    if (!element.nextElementSibling || !element.nextElementSibling.classList.contains('error')) {
@@ -82,7 +82,7 @@ function setError(element, message) {
    }
 }
 
-// Функция очистки ошибки
+//функция удаления ошибки
 function clearError(element) {
    element.style.border = '';
    if (element.nextElementSibling && element.nextElementSibling.classList.contains('error')) {
@@ -90,7 +90,7 @@ function clearError(element) {
    }
 }
 
-// Форматирование номера телефона
+//форматирование номера телефона
 document.getElementById('phone').addEventListener('input', function (e) {
    let phone = e.target.value.replace(/\D/g, ''); 
 
@@ -99,6 +99,7 @@ document.getElementById('phone').addEventListener('input', function (e) {
        phone = phone.substring(0, 11); 
    }
 
+   //сразу есть +7
    if (phone.startsWith('7')) {
        phone = '+' + phone;
    } else {

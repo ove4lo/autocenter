@@ -242,8 +242,9 @@ body {
 
 /*HEADER CONTENT*/
 .header__title {
+    font-family: inter-bold;
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 40px;
     z-index: 3;
     font-weight: 900;
     color: #F3F3F3;
@@ -271,7 +272,6 @@ body {
     display: flex;
     column-gap: 40px;
     font-size: 16px;
-    font-weight: 400;
     min-width: 528px;
 }
 
@@ -417,6 +417,7 @@ body {
 }
 
 .car__title {
+    font-family: inter-black;
     font-size: 32px;
     font-weight: 900;
 }
@@ -430,8 +431,7 @@ body {
 }   
 
 .car__subtitle {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
     color: #757575;
 }
 
@@ -472,7 +472,7 @@ body {
     border-radius: 16px;
 }
 
-.car__item h2 {
+.car__item h3 {
     font-size: 20px;
     font-weight: 700;
     margin: 8px 0;
@@ -551,12 +551,6 @@ body {
     margin-bottom: 14px;
 }
 
-.car__subtitle {
-    font-size: 13px;
-    /* margin-bottom: 10px; */
-}
-
-
 .car__items__korea {
     display: flex;
     flex-direction: column;
@@ -589,7 +583,7 @@ body {
     margin: 30px;
 }
 
-.cars__asia h2 {
+.cars__asia h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -617,7 +611,6 @@ body {
     align-items: center;
     position: relative;
     border-radius: 12px;
-    /* justify-content: space-between; */
 }
 
 .about__us p{
@@ -639,6 +632,7 @@ body {
 }
 
 .content h2 {
+    font-family: inter-black;
     font-size: 24px;
     font-weight: 700;
 }
@@ -786,7 +780,7 @@ body {
 .slider__btn {
     position: absolute;
     z-index: 9;
-    margin-top: -12%;
+    margin-top: -13%;
     width: 30px;
     height: 30px;
     border-radius: 30%;
