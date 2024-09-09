@@ -407,33 +407,25 @@ body {
 
 .car__header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin-top: 16px;
     margin-bottom: 30px;
     width: 100%;
-    flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
-}
+}   
 
 .car__subtitle {
     font-size: 18px;
     font-weight: 400;
     color: #757575;
-    margin: 0;
-    overflow: hidden; /* Предотвращает переполнение текста */
-    text-overflow: ellipsis; /* Добавляет многоточие, если текст не помещается */
-    white-space: nowrap; /* Оставляем текст в одной строке */
-    flex-shrink: 1; /* Позволяем тексту сжиматься, чтобы освободить место для кнопки */
 }
 
 .view__all {
     font-size: 16px; 
-    text-decoration: none;
-    font-weight: 400;
     white-space: nowrap;
     color: #191919;
+    align-self: center;
     margin-left: 16px; 
-    transition: color 0.3s ease;
+    transition: color 0.3s ease;  
 }
 
 .view__all:hover {
@@ -533,6 +525,11 @@ body {
     flex-direction: column;
 }
 
+.car__items {
+    display: flex;
+    flex-direction: row;
+}
+
 .car__items .car__title {
     font-size: 26px;
     margin-bottom: 14px;
@@ -540,7 +537,7 @@ body {
 
 .car__subtitle {
     font-size: 13px;
-    margin-bottom: 26px;
+    /* margin-bottom: 10px; */
 }
 
 
